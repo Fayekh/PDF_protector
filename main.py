@@ -1,12 +1,9 @@
 import tkinter as tk
-#from tkinter import ttk
 import ttkbootstrap as ttk
 import tkinter.messagebox
 import pikepdf
 from tkinter import PhotoImage, filedialog
 
-# def choosefile():
-#     pdf =  filedialog.askopenfilename(initialdir="/", title="Select A PDF", filetypes=(("pdf files", "*.pdf"),("all files", "*.*")))
 
 def protect():
     pdf_location = location.get()
@@ -39,7 +36,6 @@ input_frame_space = ttk.Frame(master=window)
 
 location = tk.StringVar()
 location_label = ttk.Label(master= input_frame0,  text = "PDF LOCATION            :  ", font= "Poppins 12 bold")
-#location_label = ttk.Label(master= input_frame,  text = "PDF", font= "Poppins 12 bold")
 
 new_pdf_name = tk.StringVar()
 new_pdf_name_label = ttk.Label(master= input_frame1,  text = "NEW PDF NAME          :  ", font= "Poppins 12 bold")
@@ -60,7 +56,6 @@ status_label = ttk.Label(master= input_frame2, text = "PDF Protected", font= "Po
 input_frame_space.pack(pady= 10)
 
 location_label.pack(side= "left")
-#entry_button_choose.pack(pady=10)
 entry.pack(side = 'left', padx= 5)
 input_frame0.pack(pady=10)
 
